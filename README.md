@@ -9,13 +9,13 @@ Weather
     /search?cities=chi,ashburn,x2,x3
 3. you should use multithreading if you need to send multi-requests at same time
     CompletableFuture + WebClient / RestTemplate
-4. current project doesn't have any log and cannot track request id(uuid)
+4. current project doesn't have any log and cannot track request id(uuid) (Partially Done)
     add filter in diff services
         get co-relation id from header
         put co-relation id in thread local
         clean up thread local id before give response
-5. current project doesn't have any api documents(swagger)
-6. current project doesn't have any exception handling
+5. current project doesn't have any api documents(swagger) (Partially Done)
+6. current project doesn't have any exception handling (Not done, will finish in the future)
 
 
 * no fail tolerance if other services couldn't respond(retry / circuit breaker(hystrix))
